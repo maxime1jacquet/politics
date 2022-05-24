@@ -8,6 +8,10 @@
   font-family: 'Roboto Mono', monospace;
 }
 
+body{
+  background-color: #eff3f2;
+}
+
 .title{
   font-family: 'Roboto Mono', monospace !important;
 }
@@ -18,3 +22,16 @@
   padding: 0 20px;
 }
 
+
+
+/*
+* MATERIAL
+*/
+
+mat-toolbar, .selected{
+  background-color: #FFA000!important;
+}
+
+.button{
+  background-color: #FFA000!important;
+}

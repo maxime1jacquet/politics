@@ -1,15 +1,16 @@
 import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
 
 @Component({
   selector: 'app-filter',
   templateUrl: './filter.component.html',
-  styleUrls: ['./filter.component.scss'],
+  styleUrls: ['./filter.component.scss']
 })
 export class FilterComponent implements OnInit {
   @Input() categories: any;
   @Input() activeCategories!: number[];
   @Output() active: EventEmitter<any> = new EventEmitter();
+
+  public panelOpenState = false;
 
   constructor() {}
 

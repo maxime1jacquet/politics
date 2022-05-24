@@ -1,24 +1,19 @@
-.filter{
-  max-width: 700px;
-  margin: 0 auto;
-  margin-bottom: 30px;
-  background-color: #e0f2f1;
-  border-radius: 5px;
-  padding: 10px;
+// .filter{
+//   max-width: 700px;
+//   margin: 0 auto;
+//   margin-bottom: 30px;
+//   background-color: #e0f2f1;
+//   border-radius: 5px;
+//   padding: 10px;
+
+//   @media screen and (min-width: 900px) {
+  //     padding: 20px;
+  //   }
+  // }
   
-  @media screen and (min-width: 900px) {
-    padding: 20px;
-  }
-
-  &__title{
-    font-size: 14px;
-    
-    @media screen and (min-width: 900px) {
-      font-size: 20px
-    }
-  }
-
-  .selected{
-    background-color: #FFA000;
-  }
+.filter{
+  margin-bottom: 30px;
+  margin: 0 auto;
+  max-width: 700px;
+  margin-bottom: 30px;
 }

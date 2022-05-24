@@ -1,0 +1,30 @@
+<div class="card-quiz">
+  <!--  -->
+  <div class="card-quiz__imgs">
+    <img
+      class="card-quiz__img"
+      *ngFor="let img of item.stars"
+      [src]="'assets/stars/' + img + '.jpg'"
+      loading="lazy"
+      [alt]="img"
+    />
+  </div>
+  <!--  -->
+  <div class="card-quiz__txts">
+    <div class="card-quiz__title">
+      <mat-chip-list class="card-quiz__categories">
+        <mat-chip *ngFor="let cat of item.category">
+          {{ categories[cat] }}
+        </mat-chip>
+      </mat-chip-list>
+      <h2 class="title h2">{{ item.title }}</h2>
+    </div>
+    <!--  -->
+    <div class="card-quiz__cta">
+      <button cursor-go mat-raised-button class="button">
+        Commencer
+        <mat-icon>arrow_forward</mat-icon>
+      </button>
+    </div>
+  </div>
+</div>

@@ -3,92 +3,13 @@
   margin-top: 30px;
 
   &__item{
-    margin: 10px 0;
+    padding: 10px 0;
 
     @media screen and (min-width: 600px) {
-      margin: 20px 0;
+      padding: 20px 0;
     }
     @media screen and (min-width: 900px) {
-      margin: 40px 0;
-    }
-  }
-
-  &__card{
-    display: flex;
-    flex-direction: column-reverse;
-    
-    @media screen and (min-width: 600px) {
-      align-items: center;
-      justify-content: space-between;
-      flex-direction: row-reverse;
-
-    }
-    @media screen and (min-width: 900px) {
-      flex-direction: row;
-
-    }
-  }
-
-  &__txts{
-    display: flex;
-    flex-direction: column;
-    flex:1;
-    
-    @media screen and (min-width: 900px) {
-      padding-left:30px;
-      justify-content: space-between;
-      align-items: center;
-      flex-direction: row;
-    }
-  }
-  &__categories{
-    display: none;
-    
-    @media screen and (min-width: 600px) {
-     display: block;
-    }
-  }
-  &__title{
-    .h2{
-      font-size: 18px;
-      font-weight: 700;
-      margin-top: 5px;
-      margin-bottom: 5px;
-      
-      @media screen and (min-width: 900px) {
-        font-size: 22px;
-      }
-    }
-  }
-
-  &__cta{
-  }
-
-  &__imgs{
-      display: flex;
-      grid-gap: 10px;
-      margin-top: 10px;
-
-      @media screen and (min-width: 600px) {
-        margin-top: 0;
-      }
-  }
-
-  &__img{
-    display: block; 
-    filter: saturate(4000%) grayscale(50%);
-    height: 50px;
-    width: 50px;
-    object-fit: cover;
-    transition: all 100ms ease-out;
-    
-    @media screen and (min-width: 600px) {
-      height: 80px;
-      width: 80px;
-    }
-    @media screen and (min-width: 900px) {
-      height: 100px;
-      width: 100px;
+      padding: 40px 0;
     }
   }
 }

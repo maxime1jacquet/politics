@@ -10,13 +10,13 @@
   "data": [
     {
       "id": "starting",
-      "category": [302],
+      "category": [300, 302],
       "title": "Quiz d'échauffement",
       "stars": ["sarkozy", "melenchon", "lepen"]
     },
     {
       "id": "griveaux-grindelwald",
-      "category": [100, 301],
+      "category": [300, 100, 301],
       "title": "Griveaux, Grindelwald  ou les 2",
       "stars": ["griveaux", "grindelwald"]
     },
