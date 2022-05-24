@@ -3,10 +3,22 @@
   margin: 0 auto;
   margin-bottom: 30px;
   background-color: #e0f2f1;
-  padding: 20px;
   border-radius: 5px;
-}
+  padding: 10px;
+  
+  @media screen and (min-width: 900px) {
+    padding: 20px;
+  }
 
-.selected{
-  background-color: #FFA000;
+  &__title{
+    font-size: 14px;
+    
+    @media screen and (min-width: 900px) {
+      font-size: 20px
+    }
+  }
+
+  .selected{
+    background-color: #FFA000;
+  }
 }
