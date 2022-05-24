@@ -1,0 +1,20 @@
+<div class="filter">
+  <h2>Explore #QPF avec les catégories</h2>
+  <mat-chip-list>
+    <mat-chip
+      (click)="toogle(1)"
+      (focus)="toogle(1)"
+      [class.selected]="existInActiveCategories(1)"
+    >
+      Tous
+    </mat-chip>
+    <mat-chip
+      *ngFor="let cat of categories | keyvalue"
+      (click)="toogle(cat.key)"
+      (focus)="toogle(cat.key)"
+      [class.selected]="existInActiveCategories(cat.key)"
+    >
+      {{ cat.value }}
+    </mat-chip>
+  </mat-chip-list>
+</div>

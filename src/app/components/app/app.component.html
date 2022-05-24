@@ -1,0 +1,58 @@
+<app-header></app-header>
+
+<ng-container
+  *ngIf="{
+    result: result$ | async,
+    activeCategories: (activeCategories$ | async)!
+  } as ui"
+>
+  <main class="main container">
+    <app-filter
+      [categories]="ui.result?.categories"
+      [activeCategories]="ui.activeCategories"
+      (active)="onChangeFilter($event)"
+    ></app-filter>
+
+    <ng-container *ngFor="let item of ui.result?.data">
+      <ng-container *ngIf="filter(ui.activeCategories, item.category)">
+        <mat-divider></mat-divider>
+
+        <div class="main__item">
+          <div class="main__info">
+            <div class="main__title">
+              <mat-chip-list>
+                <mat-chip *ngFor="let cat of item.category">
+                  {{ ui.result.categories[cat] }}
+                </mat-chip>
+              </mat-chip-list>
+              <h2 class="title">{{ item.title }}</h2>
+            </div>
+            <div>
+              <button cursor-go mat-raised-button color="primary">
+                Commencer le quiz >
+              </button>
+            </div>
+          </div>
+
+          <div class="main__imgs">
+            <img
+              class="main__img"
+              *ngFor="let img of item.stars"
+              [src]="'assets/stars/' + img + '.jpg'"
+              alt=""
+            />
+          </div>
+        </div>
+      </ng-container>
+    </ng-container>
+  </main>
+</ng-container>
+
+<router-outlet></router-outlet>
+
+<!-- <ngx-cursor
+  [cursor]="false"
+  [zindex]="9999"
+  [selectors]="['go', 'false']"
+  [words]="['Go', 'presque']"
+></ngx-cursor> -->

@@ -1,0 +1,36 @@
+{
+  "categories": {
+    "100": "Burger Quiz",
+    "200": "Agression sexuelle",
+    "201": "Détournement de fonds",
+    "300": "Nouveauté",
+    "301": "Exhibition",
+    "302": "Indémodable"
+  },
+  "data": [
+    {
+      "id": "starting",
+      "category": [302],
+      "title": "Quiz débutant",
+      "stars": ["sarkozy", "melenchon", "lepen"]
+    },
+    {
+      "id": "griveaux-grindelwald",
+      "category": [100, 301],
+      "title": "Griveaux, Grindelwald  ou les 2",
+      "stars": ["griveaux", "grindelwald"]
+    },
+    {
+      "id": "agression-sexuelle",
+      "category": [300, 200],
+      "title": "Soupsons d'agressions sexuelles",
+      "stars": ["darmanin", "abad"]
+    },
+    {
+      "id": "argent-publique",
+      "category": [300, 201],
+      "title": "Argent Argent Argent",
+      "stars": ["fillon", "cahuzac", "lepen"]
+    }
+  ]
+}

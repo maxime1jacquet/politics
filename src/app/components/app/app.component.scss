@@ -1,0 +1,39 @@
+
+.main{
+  margin-top: 30px;
+
+  &__item{
+    margin: 40px 0;
+  }
+
+  &__info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  &__title{
+    h2{
+      font-size: 25px;
+      font-weight: 700;
+      margin-top: 5px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__imgs{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 400px;
+    margin-top: 10px;
+    grid-gap: 10px;
+  }
+
+    &__img{
+    filter: saturate(6000%) grayscale(50%);
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all 100ms ease-out;
+  }
+}
