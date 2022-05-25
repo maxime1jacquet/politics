@@ -5,6 +5,7 @@
       margin-top: 30px;
     }
   }
+  
   &__count{
     display: flex;
     flex-direction: column;
@@ -14,24 +15,25 @@
     margin-bottom: 30px;
     
     @media screen and (min-width: 900px) {
-      font-size: 80px;
-      flex-direction: row;
       align-items: center;
+      flex-direction: row;
+      font-size: 80px;
       justify-content: center;
     }
     
     span{
-      line-height: 1;
-      font-weight: 400;
       font-size: 18px;
+      font-weight: 400;
+      line-height: 1;
       @media screen and (min-width: 900px) {
         text-indent: 20px;
       }
     }
   }
+
   &__item{
-    display: flex;
     align-items: center;
+    display: flex;
     margin:10px 0;
 
     mat-icon{
@@ -40,7 +42,6 @@
     mat-icon.success{
       color:#4CAF50
     }
-  
     mat-icon.fail{
       color:#F44336
     }

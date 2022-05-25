@@ -120,6 +120,7 @@ export class QuizSingleComponent implements OnInit {
     this.currentQuestion$.next(id + 1);
     this.currentStatus$.next(0);
     this.currentResponse$.next([]);
+    window.scrollTo(0, 0);
   }
 
   public getRandomGifSuccess(): string {

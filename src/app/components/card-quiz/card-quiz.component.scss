@@ -26,11 +26,11 @@
   }
 
   &__categories{
-    display: none;
+    // display: none;
     
-    @media screen and (min-width: 600px) {
-    display: block;
-    }
+    // @media screen and (min-width: 600px) {
+    // display: block;
+    // }
   }
 
   &__title{
@@ -50,11 +50,12 @@
   }
 
   &__imgs{
-    display: flex;
-    grid-gap: 5px;
-    margin-top: 10px;
+    display: none;
     
     @media screen and (min-width: 600px) {
+      display: flex;
+      grid-gap: 5px;
+      margin-top: 10px;
       margin-top:  0;
       margin-left: 10px; 
     }

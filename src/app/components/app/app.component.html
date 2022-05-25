@@ -1,5 +1,3 @@
-<!-- <app-header></app-header> -->
-
 <main class="main container">
   <router-outlet></router-outlet>
 </main>
@@ -11,19 +9,10 @@
 
     Les quiz sont humoristiques et se basent sur des articles de journaux. Aucun
     quiz ne cible directement une personne ou un parti politique. L'idée est de
-    dénoncer la classe politique française dans la globalité. Si toutefois un
-    quiz vous semble déplacé vous pouvez nous faire une réclamation en
-    <a routerLink="/reclamation">cliquant ici</a>.<br /><br />
+    dénoncer la classe politique française dans la globalité.<br /><br />
 
     Les résultats des quiz sont enregistrés temporairement dans le
     "localStorage" de votre appareil. Vous pouvez le réinitialiser en
-    <a routerLink="/reclamation">cliquant ici</a>.
+    <button (click)="resetStorage()">cliquant ici</button>.
   </div>
 </footer>
-
-<!-- <ngx-cursor
-  [cursor]="false"
-  [zindex]="9999"
-  [selectors]="['go', 'false']"
-  [words]="['Go', 'presque']"
-></ngx-cursor> -->

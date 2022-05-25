@@ -1,4 +1,4 @@
-<div class="card-quiz">
+<div class="card-quiz" *ngIf="item">
   <!--  -->
   <div class="card-quiz__imgs">
     <img
@@ -22,8 +22,14 @@
     <!--  -->
     <div class="card-quiz__cta">
       <a class="button" mat-button [routerLink]="'/' + item.id">
-        Commencer
-        <mat-icon>arrow_forward</mat-icon>
+        <ng-container *ngIf="percent">
+          Score : {{ percent }}%
+          <mat-icon>replay</mat-icon>
+        </ng-container>
+        <ng-container *ngIf="percent == null">
+          Commencer
+          <mat-icon>arrow_forward</mat-icon>
+        </ng-container>
       </a>
     </div>
   </div>

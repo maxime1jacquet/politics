@@ -1,6 +1,6 @@
 
 .main{
-  padding-top: calc(65px + 30px);
+  padding-top: calc(65px + 20px);
   min-height: 90vh;
 }
 
@@ -13,5 +13,20 @@
   @media screen and (min-width: 600px) {
     padding: 30px 0;
     font-size: 11px;
+  }
+
+  button{
+    appearance: none;
+    background-color: transparent;
+    border:0;
+    font-size: 9px;
+    margin: 0;
+    padding: 0;
+    text-decoration: underline;
+    cursor: pointer;
+
+    @media screen and (min-width: 600px) {
+      font-size: 11px;
+    }
   }
 }
