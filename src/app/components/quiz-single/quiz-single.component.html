@@ -19,7 +19,7 @@
           <!--  QUESTION -->
           <div class="quiz-single__question">
             <h2 class="quiz-single__title title">{{ question.title }}</h2>
-            <hr />
+            <mat-divider></mat-divider>
 
             <ng-container *ngIf="ui.currentStatus == 0">
               <div class="quiz-single__form">
@@ -56,7 +56,7 @@
               *ngIf="ui.currentStatus == 1"
             >
               <img
-                [src]="getRandomGifSuccess()"
+                [src]="randomGifSuccess"
                 alt=""
                 width="200px"
                 height="200px"
@@ -68,12 +68,7 @@
               class="quiz-singlee__result quiz-single__fail"
               *ngIf="ui.currentStatus == 2"
             >
-              <img
-                [src]="getRandomGifFail()"
-                alt=""
-                width="200px"
-                height="200px"
-              />
+              <img [src]="randomGifFail" alt="" width="200px" height="200px" />
               <mat-icon>cancel</mat-icon>
               <div>Mauvaise réponse</div>
             </div>

@@ -1,0 +1,52 @@
+.quiz-result{
+  &__list{
+    margin-top: 10px;
+    @media screen and (min-width: 900px) {
+      margin-top: 30px;
+    }
+  }
+  &__count{
+    display: flex;
+    flex-direction: column;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    
+    @media screen and (min-width: 900px) {
+      font-size: 80px;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    span{
+      line-height: 1;
+      font-weight: 400;
+      font-size: 18px;
+      @media screen and (min-width: 900px) {
+        text-indent: 20px;
+      }
+    }
+  }
+  &__item{
+    display: flex;
+    align-items: center;
+    margin:10px 0;
+
+    mat-icon{
+      margin-right: 10px;
+    }
+    mat-icon.success{
+      color:#4CAF50
+    }
+  
+    mat-icon.fail{
+      color:#F44336
+    }
+  }
+  &__cta{
+    margin-top: 20px;
+    text-align: center;
+  }
+}

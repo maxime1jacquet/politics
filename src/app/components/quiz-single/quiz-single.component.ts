@@ -28,6 +28,8 @@ export class QuizSingleComponent implements OnInit {
   public currentStatus$ = new BehaviorSubject<number>(0);
   public currentResponse$ = new BehaviorSubject<string[]>([]);
 
+  public randomGifSuccess = '';
+  public randomGifFail = '';
   public success = [
     'https://media.giphy.com/media/4xpB3eE00FfBm/giphy.gif',
     'https://media.giphy.com/media/o75ajIFH0QnQC3nCeD/giphy.gif',
@@ -51,7 +53,6 @@ export class QuizSingleComponent implements OnInit {
     'https://media.giphy.com/media/31lPv5L3aIvTi/giphy.gif',
     'https://media.giphy.com/media/Q81NcsY6YxK7jxnr4v/giphy.gif'
   ];
-
   public fail = [
     'https://media.giphy.com/media/li0dswKqIZNpm/giphy.gif',
     'https://media.giphy.com/media/3o6Zt1TrXW8uW2lE2I/giphy.gif',
@@ -67,7 +68,8 @@ export class QuizSingleComponent implements OnInit {
     'https://media.giphy.com/media/3og0IQvQkzyfxgjzLa/giphy.gif',
     'https://media.giphy.com/media/26FPyr3ZL3j1r3I2s/giphy.gif',
     'https://media.giphy.com/media/haZOqHKz9tTfW/giphy.gif',
-    'https://media.giphy.com/media/YPKAxM2qNEElwJFjqi/giphy.gif'
+    'https://media.giphy.com/media/YPKAxM2qNEElwJFjqi/giphy.gif',
+    'https://media.giphy.com/media/JvEMPOQubkyQx9YLQ5/giphy.gif'
   ];
 
   constructor(
@@ -101,8 +103,10 @@ export class QuizSingleComponent implements OnInit {
     const previousValue = this.currentForm$.getValue();
     const newValue = [...previousValue, result];
 
-    this.registerInStorage(id, newValue);
     this.currentForm$.next(newValue);
+    this.registerInStorage(id, newValue);
+    this.randomGifSuccess = this.getRandomGifSuccess();
+    this.randomGifFail = this.getRandomGifFail();
 
     if (result) {
       this.currentStatus$.next(1);

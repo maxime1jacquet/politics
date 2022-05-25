@@ -1,3 +1,32 @@
-<p>
-  quiz-result works!
-</p>
+<app-header [title]="'Résultats'"></app-header>
+
+<div class="quiz-result" *ngIf="result$ | async as result">
+  <mat-accordion>
+    <mat-expansion-panel [expanded]="true">
+      <div class="quiz-result__list">
+        <div class="quiz-result__count">
+          {{ percent$ | async }}%<span> de bonnes réponses</span>
+        </div>
+        <!--  -->
+        <mat-divider></mat-divider>
+        <!--  -->
+        <div
+          class="quiz-result__item"
+          *ngFor="let item of questions$ | async; let i = index"
+        >
+          <mat-icon class="success" *ngIf="result[i]">check_circle</mat-icon>
+          <mat-icon class="fail" *ngIf="!result[i]">cancel</mat-icon>
+
+          {{ item.title }}
+        </div>
+        <!--  -->
+        <div class="quiz-result__cta">
+          <a class="button" mat-button [routerLink]="'/'">
+            <mat-icon>arrow_back</mat-icon>
+            Retour aux quiz
+          </a>
+        </div>
+      </div>
+    </mat-expansion-panel>
+  </mat-accordion>
+</div>
