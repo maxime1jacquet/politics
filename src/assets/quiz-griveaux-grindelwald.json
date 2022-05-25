@@ -1,0 +1,10 @@
+[
+  {
+    "type": "checkbox",
+    "title": "Qui a déjà sortie sa baguette ?",
+    "options": ["Benjamin Griveaux", "Gellert Grindelwald", "Les deux"],
+    "responses": ["Les deux"],
+    "source": "https://www.google.com/",
+    "comment": "En réalité, ils sont tous inculpé"
+  }
+]

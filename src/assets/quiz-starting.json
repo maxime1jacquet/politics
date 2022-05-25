@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Qui a déjà été condamné par la justice (au moins une fois) ?",
+    "options": [
+      "Nicolas Sarkosy",
+      "Marine Lepen",
+      "Jean-Luc Mélenchon",
+      "Jérome Cahuzac"
+    ],
+    "responses": [
+      "Nicolas Sarkosy",
+      "Marine Lepen",
+      "Jean-Luc Mélenchon",
+      "Jérome Cahuzac"
+    ],
+    "source": "https://www.google.com/",
+    "comment": "En réalité, ils sont tous inculpé"
+  },
+  {
+    "title": "Qui a dit : 'La république, c'est moi !' et 'Ma personne est sacré' ?",
+    "options": [
+      "Mao Zedong",
+      "Jean-Luc Mélenchon",
+      "Adolf Hitler",
+      "Kim Jong-un",
+      "Benito Mussolini"
+    ],
+    "responses": ["Jean-Luc Mélenchon"],
+    "source": "https://www.google.com/",
+    "comment": "Lors d'une interpellation ........."
+  },
+  {
+    "title": "Quel ministre du budget a menti sur un compte en suisse ?",
+    "options": [
+      "Bernard Cazeneuve",
+      "Jérome Cahuzac",
+      "Valérie Pécresse",
+      "François Baroin"
+    ],
+    "responses": ["Jérome Cahuzac"],
+    "source": "https://www.google.com/",
+    "comment": "Lors d'une interpellation ........."
+  }
+]

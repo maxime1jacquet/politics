@@ -1,0 +1,79 @@
+<ng-container
+  *ngIf="{
+    questions: questions$ | async,
+    result: result$ | async,
+    currentQuestion: currentQuestion$ | async,
+    currentStatus: currentStatus$ | async
+  } as ui"
+>
+  <app-header [title]="ui.result?.title!"></app-header>
+
+  <div class="quiz-single">
+    <ng-container *ngFor="let question of ui.questions; let i = index">
+      <div class="quiz-single__count" *ngIf="i == ui.currentQuestion">
+        Question {{ i + 1 }} sur {{ ui.questions?.length }}
+      </div>
+
+      <mat-accordion *ngIf="i == ui.currentQuestion">
+        <mat-expansion-panel [expanded]="true">
+          <!--  -->
+          <div class="quiz-single__question">
+            <h2 class="quiz-single__title title">{{ question.title }}</h2>
+            <hr />
+
+            <ng-container *ngIf="ui.currentStatus == 0">
+              <div class="quiz-single__form">
+                <div
+                  *ngFor="let option of question.options"
+                  class="quiz-single__form-item"
+                >
+                  <mat-checkbox
+                    #checkbox
+                    (change)="checkboxChange($event)"
+                    [value]="option"
+                  >
+                    {{ option }}
+                  </mat-checkbox>
+                </div>
+                <div class="quiz-single__form-cta">
+                  <button
+                    mat-button
+                    class="button"
+                    (click)="valid(question.responses)"
+                  >
+                    Confirmer ma réponse
+                    <mat-icon>done</mat-icon>
+                  </button>
+                </div>
+              </div>
+            </ng-container>
+
+            <!--  -->
+
+            <ng-container
+              *ngIf="ui.currentStatus == 1 || ui.currentStatus == 2"
+            >
+              {{ ui.currentStatus == 1 ? 'VRAI' : 'FAUX' }}
+
+              <div>
+                <h2 class="title">Contexte :</h2>
+                <div [innerHTML]="question.comment"></div>
+                <a [attr.href]="question.source" target="_blank">
+                  {{ question.source }}
+                </a>
+                <div class="quiz-single__form-cta">
+                  <button mat-button class="button" (click)="next(i)">
+                    Question suivante
+                    <mat-icon>skip_next</mat-icon>
+                  </button>
+                </div>
+              </div>
+            </ng-container>
+          </div>
+
+          <!--  -->
+        </mat-expansion-panel>
+      </mat-accordion>
+    </ng-container>
+  </div>
+</ng-container>

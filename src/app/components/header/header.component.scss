@@ -1,11 +1,26 @@
-.h1{
-  font-size: 18px;
+
+
+.header{
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9;
+
+  &__content{
+    display: flex;
+    align-items: center;
+  }
+
+  &__space{
+    width: 20px;
+  }
   
-  @media screen and (min-width: 600px) {
-    font-size: 30px;
+  .h1{
+    font-size: 18px;
+    
+    @media screen and (min-width: 600px) {
+      font-size: 30px;
+    }
   }
 }
-.space{
-  width: 20px;
-}
-

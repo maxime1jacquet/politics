@@ -1,0 +1,30 @@
+<app-header></app-header>
+
+<div
+  class="quiz-list"
+  *ngIf="{
+    result: result$ | async,
+    activeCategories: (activeCategories$ | async)!
+  } as ui"
+>
+  <app-filter
+    [categories]="ui.result?.categories"
+    [activeCategories]="ui.activeCategories"
+    (active)="onChangeFilter($event)"
+  ></app-filter>
+
+  <ng-container *ngFor="let item of ui.result?.data">
+    <ng-container
+      *ngIf="filter(ui.activeCategories, item.category) && item.visible"
+    >
+      <mat-divider></mat-divider>
+
+      <div class="quiz-list__item">
+        <app-card-quiz
+          [item]="item"
+          [categories]="ui.result?.categories"
+        ></app-card-quiz>
+      </div>
+    </ng-container>
+  </ng-container>
+</div>

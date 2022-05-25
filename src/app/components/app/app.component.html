@@ -1,36 +1,25 @@
-<app-header></app-header>
+<!-- <app-header></app-header> -->
 
-<ng-container
-  *ngIf="{
-    result: result$ | async,
-    activeCategories: (activeCategories$ | async)!
-  } as ui"
->
-  <main class="main container">
-    <app-filter
-      [categories]="ui.result?.categories"
-      [activeCategories]="ui.activeCategories"
-      (active)="onChangeFilter($event)"
-    ></app-filter>
+<main class="main container">
+  <router-outlet></router-outlet>
+</main>
 
-    <ng-container *ngFor="let item of ui.result?.data">
-      <ng-container *ngIf="filter(ui.activeCategories, item.category)">
-        <mat-divider></mat-divider>
+<footer class="footer">
+  <div class="container">
+    Ce site n'utilise pas de cookie, ne nécessite pas de compte et ne contient
+    pas de publicité.<br /><br />
 
-        <div class="main__item">
-          <app-card-quiz
-            [item]="item"
-            [categories]="ui.result.categories"
-          ></app-card-quiz>
-        </div>
-      </ng-container>
-    </ng-container>
-  </main>
-</ng-container>
+    Les quiz sont humoristiques et se basent sur des articles de journaux. Aucun
+    quiz ne cible directement une personne ou un parti politique. L'idée est de
+    dénoncer la classe politique française dans la globalité. Si toutefois un
+    quiz vous semble déplacé vous pouvez nous faire une réclamation en
+    <a routerLink="/reclamation">cliquant ici</a>.<br /><br />
 
-<router-outlet></router-outlet>
-
-<footer></footer>
+    Les résultats des quiz sont enregistrés temporairement dans le
+    "localStorage" de votre appareil. Vous pouvez le réinitialiser en
+    <a routerLink="/reclamation">cliquant ici</a>.
+  </div>
+</footer>
 
 <!-- <ngx-cursor
   [cursor]="false"

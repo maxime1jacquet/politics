@@ -1,7 +1,17 @@
-<mat-toolbar>
-  <mat-icon>quiz</mat-icon>
-  <div class="space"></div>
-  <span>
-    <h1 class="h1 title">Quiz - politiques français</h1>
-  </span>
+<mat-toolbar class="header" routerLink="/">
+  <div class="container header__content">
+    <!--  -->
+    <ng-container *ngIf="title == ''">
+      <mat-icon>quiz</mat-icon>
+      <div class="header__space"></div>
+      <h1 class="h1 title">Quiz - politiques français</h1>
+    </ng-container>
+    <!--  -->
+    <ng-container *ngIf="title !== ''">
+      <mat-icon>arrow_back</mat-icon>
+      <div class="header__space"></div>
+      <h1 class="h1 title">{{ title }}</h1>
+    </ng-container>
+    <!--  -->
+  </div>
 </mat-toolbar>

@@ -12,25 +12,36 @@
       "id": "starting",
       "category": [300, 302],
       "title": "Quiz d'échauffement",
-      "stars": ["sarkozy", "melenchon", "lepen"]
+      "stars": ["sarkozy", "melenchon", "lepen"],
+      "visible": true
     },
     {
       "id": "griveaux-grindelwald",
       "category": [300, 100, 301],
       "title": "Griveaux, Grindelwald  ou les 2",
-      "stars": ["griveaux", "grindelwald"]
+      "stars": ["griveaux", "grindelwald"],
+      "visible": true
     },
     {
       "id": "agression-sexuelle",
       "category": [300, 200],
       "title": "Soupsons d'agressions sexuelles",
-      "stars": ["darmanin", "abad"]
+      "stars": ["darmanin", "abad"],
+      "visible": true
     },
     {
       "id": "argent-publique",
       "category": [300, 201],
       "title": "Argent Argent Argent",
-      "stars": ["fillon", "cahuzac", "lepen"]
+      "stars": ["fillon", "cahuzac", "lepen"],
+      "visible": true
+    },
+    {
+      "id": "reclamation",
+      "category": [],
+      "title": "Va te faire en**lé ;) ",
+      "stars": [],
+      "visible": false
     }
   ]
 }
