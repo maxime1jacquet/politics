@@ -16,7 +16,7 @@
 
       <mat-accordion *ngIf="i == ui.currentQuestion">
         <mat-expansion-panel [expanded]="true">
-          <!--  -->
+          <!--  QUESTION -->
           <div class="quiz-single__question">
             <h2 class="quiz-single__title title">{{ question.title }}</h2>
             <hr />
@@ -39,7 +39,7 @@
                   <button
                     mat-button
                     class="button"
-                    (click)="valid(question.responses)"
+                    (click)="valid(ui.result?.id!, question.responses)"
                   >
                     Confirmer ma réponse
                     <mat-icon>done</mat-icon>
@@ -47,28 +47,55 @@
                 </div>
               </div>
             </ng-container>
+          </div>
 
-            <!--  -->
-
-            <ng-container
-              *ngIf="ui.currentStatus == 1 || ui.currentStatus == 2"
+          <!-- RESULT -->
+          <div *ngIf="ui.currentStatus == 1 || ui.currentStatus == 2">
+            <div
+              class="quiz-single__result quiz-single__success"
+              *ngIf="ui.currentStatus == 1"
             >
-              {{ ui.currentStatus == 1 ? 'VRAI' : 'FAUX' }}
+              <img
+                [src]="getRandomGifSuccess()"
+                alt=""
+                width="200px"
+                height="200px"
+              />
+              <mat-icon>check_circle</mat-icon>
+              <div>Bonne réponse</div>
+            </div>
+            <div
+              class="quiz-singlee__result quiz-single__fail"
+              *ngIf="ui.currentStatus == 2"
+            >
+              <img
+                [src]="getRandomGifFail()"
+                alt=""
+                width="200px"
+                height="200px"
+              />
+              <mat-icon>cancel</mat-icon>
+              <div>Mauvaise réponse</div>
+            </div>
 
-              <div>
-                <h2 class="title">Contexte :</h2>
-                <div [innerHTML]="question.comment"></div>
-                <a [attr.href]="question.source" target="_blank">
-                  {{ question.source }}
-                </a>
-                <div class="quiz-single__form-cta">
-                  <button mat-button class="button" (click)="next(i)">
-                    Question suivante
-                    <mat-icon>skip_next</mat-icon>
-                  </button>
-                </div>
+            <div>
+              <h2 class="title">Contexte :</h2>
+              <div [innerHTML]="question.comment"></div>
+              <a [attr.href]="question.source" target="_blank">
+                {{ question.source }}
+              </a>
+              <div class="quiz-single__form-cta">
+                <button
+                  mat-button
+                  class="button"
+                  (click)="next(i)"
+                  *ngIf="ui.questions?.length !== i + 1; else seeResult"
+                >
+                  Question suivante
+                  <mat-icon>skip_next</mat-icon>
+                </button>
               </div>
-            </ng-container>
+            </div>
           </div>
 
           <!--  -->
@@ -77,3 +104,10 @@
     </ng-container>
   </div>
 </ng-container>
+
+<ng-template #seeResult>
+  <a mat-button class="button" routerLink="resultat">
+    Voir les résultats
+    <mat-icon>skip_next</mat-icon>
+  </a>
+</ng-template>

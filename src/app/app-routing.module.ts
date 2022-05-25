@@ -1,7 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { QuizListComponent, QuizSingleComponent } from './components';
+import {
+  QuizListComponent,
+  QuizSingleComponent,
+  QuizResultComponent
+} from './components';
 
 const routes: Routes = [
   {
@@ -11,6 +15,10 @@ const routes: Routes = [
   {
     path: ':id',
     component: QuizSingleComponent
+  },
+  {
+    path: ':id/resultat',
+    component: QuizResultComponent
   }
 ];
 

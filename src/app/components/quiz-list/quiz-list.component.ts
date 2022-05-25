@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
 
-import { QuizService } from '../../services/quiz.service.ts.service';
+import { QuizService } from '../../services/quiz.service';
 import { QuizList } from '../../models/quiz.model';
 
 @Component({
