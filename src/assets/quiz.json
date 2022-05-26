@@ -4,7 +4,6 @@
     "200": "Agression sexuelle",
     "201": "Détournement de fonds",
     "300": "Nouveauté",
-    "301": "Exhibition",
     "302": "Indémodable"
   },
   "data": [
@@ -18,22 +17,22 @@
     {
       "id": "agression-sexuelle",
       "category": [300, 200],
-      "title": "Soupsons d'agressions sexuelles",
+      "title": "Les soupsons d'agressions sexuelles",
       "stars": ["darmanin", "abad", "zemmour"],
-      "visible": false
-    },
-    {
-      "id": "griveaux-grindelwald",
-      "category": [300, 100, 301],
-      "title": "Griveaux, Grindelwald  ou les 2",
-      "stars": ["griveaux", "grindelwald"],
-      "visible": false
+      "visible": true
     },
     {
       "id": "argent-publique",
       "category": [300, 201],
-      "title": "Argent Argent Argent",
+      "title": "Les politiques et l'argent publique",
       "stars": ["fillon", "cahuzac", "lepen"],
+      "visible": true
+    },
+    {
+      "id": "griveaux-grindelwald",
+      "category": [300, 100],
+      "title": "Griveaux, Grindelwald  ou les 2",
+      "stars": ["griveaux", "grindelwald"],
       "visible": false
     }
   ]

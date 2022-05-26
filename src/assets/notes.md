@@ -1,6 +1,7 @@
 # Idée
 
-- Bernard tapis un tapis ou les 2
+- Bernard tapis, un tapis ou les 2
+- François Fillon, un trou de fion ou les 2
 - La violance en politique
   bayorou avec le l'enfant
   claque, gateux farine oeuf
