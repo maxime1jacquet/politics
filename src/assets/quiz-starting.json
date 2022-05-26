@@ -1,23 +1,61 @@
 [
   {
-    "title": "Qui a déjà été condamné par la justice (au moins une fois) ?",
+    "title": "Quel ministre du budget a menti sur la possesion d'un compte en Suisse ?",
     "options": [
-      "Nicolas Sarkosy",
-      "Marine Lepen",
-      "Jean-Luc Mélenchon",
-      "Jérome Cahuzac"
+      "Bernard Cazeneuve",
+      "Jérome Cahuzac",
+      "Valérie Pécresse",
+      "François Baroin"
     ],
-    "responses": [
-      "Nicolas Sarkosy",
-      "Marine Lepen",
-      "Jean-Luc Mélenchon",
-      "Jérome Cahuzac"
-    ],
-    "source": "https://www.google.com/",
-    "comment": "En réalité, ils sont tous inculpé"
+    "responses": ["Jérome Cahuzac"],
+    "source": ["https://fr.wikipedia.org/wiki/Affaire_Cahuzac"],
+    "comment": "L'affaire Cahuzac est un scandale politico-financier français mettant en cause Jérôme Cahuzac, ministre délégué chargé du Budget lors du déclenchement de l’affaire en décembre 2012. Accusé par le site d'information en ligne Mediapart d'avoir possédé des fonds non déclarés sur un compte en Suisse, puis à Singapour, Cahuzac campe sur son déni et clame à plusieurs reprises son innocence, y compris devant les députés à l'Assemblée nationale. Des personnalités comme Jean-Michel Aphatie1 demandent à Mediapart de publier ses preuves2, quitte à divulguer ses sources. Le jour de l'ouverture d'une information judiciaire, le 19 mars 2013, le président de la République, François Hollande, annonce le départ de son ministre du gouvernement3. Pendant des semaines, l'affaire prend une dimension nationale puis « place sous le feu des projecteurs le rôle et les méthodes du journalisme d'investigation »4,5,6, avec de longs débats sur leurs sources d'information et le refus pendant de longues semaines de Cahuzac de démissionner, jugée emblématique d'une conception de la politique spécifique à la France4. Jérôme Cahuzac finit par reconnaître les faits le 2 avril 2013 devant les juges d'instruction. Il est alors mis en examen pour blanchiment d'argent provenant de fraude fiscale. Le 8 décembre 2016, il est condamné en première instance à trois ans de prison ferme et cinq ans d’inéligibilité. Il décide alors d'interjeter appel de cette condamnation ce qui en suspend l'exécution. En mai 2018, Cahuzac est finalement condamné à deux ans de prison ferme, une peine aménageable, 300 000 € d'amende et 5 ans d'inéligibilité. La peine de prison est en réalité transformée en avril 2019 en port de bracelet électronique dans sa résidence de Corse7."
   },
   {
-    "title": "Qui a dit : 'La république, c'est moi !' et 'Ma personne est sacré' ?",
+    "title": "Qui a déjà été condamné par la justice (au moins une fois) ?",
+    "options": [
+      "Nicolas Sarkozy",
+      "Marine Lepen",
+      "Jean-Luc Mélenchon",
+      "Jérome Cahuzac",
+      "Patrick Balkany",
+      "Eric Zemmour"
+    ],
+    "responses": [
+      "Nicolas Sarkozy",
+      "Marine Lepen",
+      "Jean-Luc Mélenchon",
+      "Jérome Cahuzac",
+      "Patrick Balkany",
+      "Eric Zemmour"
+    ],
+    "comment": "En réalité, ils ont tous été condamné par la justice. Certains sont encore en procédure d'appel de leurs procès. Mais bon ;)",
+    "source": [
+      "https://www.lemonde.fr/politique/article/2022/01/17/eric-zemmour-condamne-pour-la-troisieme-fois-par-la-justice_6109839_823448.html",
+      "https://www.leparisien.fr/politique/jean-luc-melenchon-condamne-a-trois-mois-de-prison-avec-sursis-pour-rebellion-et-provocation-09-12-2019-8212674.php",
+      "https://www.latribune.fr/economie/union-europeenne/marine-le-pen-accusee-d-avoir-detourne-des-fonds-europeens-914327.html",
+      "https://www.lemonde.fr/politique/article/2021/03/01/nicolas-sarkozy-condamne-a-trois-ans-de-prison-dont-un-an-ferme-dans-l-affaire-des-ecoutes_6071580_823448.html",
+      "https://fr.wikipedia.org/wiki/Affaire_Cahuzac",
+      "https://www.francetvinfo.fr/politique/affaire/affaire-balkany/l-ancien-maire-de-levallois-perret-patrick-balkany-condamne-pour-fraude-fiscale-va-etre-incarcere-lundi-a-fleury-merogis_4947984.html"
+    ]
+  },
+  {
+    "title": "Qui a réélement exécuté sa peine ?",
+    "options": [
+      "Nicolas Sarkozy",
+      "Marine Lepen",
+      "Jean-Luc Mélenchon",
+      "Jérome Cahuzac",
+      "Patrick Balkany",
+      "Eric Zemmour",
+      "Aucun"
+    ],
+    "responses": ["Aucun"],
+    "comment": "Aucun évidemment, no comment.",
+    "source": []
+  },
+  {
+    "title": "Qui a dit «La république, c'est moi !» et aussi «Ma personne est sacré» ?",
     "options": [
       "Mao Zedong",
       "Jean-Luc Mélenchon",
@@ -26,19 +64,36 @@
       "Benito Mussolini"
     ],
     "responses": ["Jean-Luc Mélenchon"],
-    "source": "https://www.google.com/",
-    "comment": "Lors d'une interpellation ........."
+    "comment": "Dans le cadre des enquêtes préliminaires sur ses comptes de campagne (LFI) de 2017 et sur les emplois fictifs présumés au Parlement européen, une perquisition est menée par l'OCLCIFF à son domicile parisien, chez une dizaine de membres du parti et dans les locaux de La France insoumise. Présent sur place, Jean-Luc Mélenchon dénonce sur Facebook une « énorme opération de police politique ». Il se rend alors au siège FI avec des élus, qu’il incite à enfoncer la porte des locaux dont les policiers lui refusent l'accès pendant la perquisition ; il pousse le procureur dirigeant l’opération ainsi qu’un policier venu s'interposer, et s’exclame « La République, c'est moi ! »",
+    "source": [
+      "https://www.youtube.com/watch?v=U65CDIO03do",
+      "https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon#Affaires_judiciaires"
+    ]
   },
   {
-    "title": "Quel ministre du budget a menti sur un compte en suisse ?",
+    "title": "Qui est sortie de la prison de la santé, pour des raisons médicales ?",
     "options": [
-      "Bernard Cazeneuve",
-      "Jérome Cahuzac",
-      "Valérie Pécresse",
-      "François Baroin"
+      "François Fillon",
+      "Gérard Collomb",
+      "Jacques Chirac",
+      "Patrick Balkany"
     ],
-    "responses": ["Jérome Cahuzac"],
-    "source": "https://www.google.com/",
-    "comment": "Lors d'une interpellation ........."
+    "responses": ["Patrick Balkany"],
+    "comment": "",
+    "source": [
+      "https://www.lemonde.fr/societe/article/2020/02/12/la-cour-d-appel-de-paris-ordonne-la-liberation-de-patrick-balkany_6029338_3224.html"
+    ]
+  },
+  {
+    "title": "Qui après être sortie de la prison de la santé, s'est ambiancé à la fête de la musique à Levallois-Perret ?",
+    "options": [
+      "François Fillon",
+      "Gérard Collomb",
+      "Jacques Chirac",
+      "Patrick Balkany"
+    ],
+    "responses": ["Patrick Balkany"],
+    "comment": "Si vous ne l'aviez pas encore vu, allez voir la vidéo ! (on notera la petite main aux fesses.)",
+    "source": ["https://www.youtube.com/watch?v=eo4a8AWv6bY"]
   }
 ]

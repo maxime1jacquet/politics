@@ -16,31 +16,24 @@
       "visible": true
     },
     {
+      "id": "agression-sexuelle",
+      "category": [300, 200],
+      "title": "Soupsons d'agressions sexuelles",
+      "stars": ["darmanin", "abad", "zemmour"],
+      "visible": false
+    },
+    {
       "id": "griveaux-grindelwald",
       "category": [300, 100, 301],
       "title": "Griveaux, Grindelwald  ou les 2",
       "stars": ["griveaux", "grindelwald"],
-      "visible": true
-    },
-    {
-      "id": "agression-sexuelle",
-      "category": [300, 200],
-      "title": "Soupsons d'agressions sexuelles",
-      "stars": ["darmanin", "abad"],
-      "visible": true
+      "visible": false
     },
     {
       "id": "argent-publique",
       "category": [300, 201],
       "title": "Argent Argent Argent",
       "stars": ["fillon", "cahuzac", "lepen"],
-      "visible": true
-    },
-    {
-      "id": "reclamation",
-      "category": [],
-      "title": "Va te faire en**lé ;) ",
-      "stars": [],
       "visible": false
     }
   ]

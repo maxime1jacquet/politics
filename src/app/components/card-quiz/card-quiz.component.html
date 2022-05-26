@@ -22,7 +22,7 @@
     <!--  -->
     <div class="card-quiz__cta">
       <a class="button" mat-button [routerLink]="'/' + item.id">
-        <ng-container *ngIf="percent">
+        <ng-container *ngIf="percent != null">
           Score : {{ percent }}%
           <mat-icon>replay</mat-icon>
         </ng-container>

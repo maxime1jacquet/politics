@@ -38,6 +38,17 @@
     }
   }
 
+  &__subtitle{
+    font-size: 14px;
+    margin: -10px 0 20px 0;
+    display: flex;
+    align-items: center;
+
+    .mat-icon{
+      margin-right: 5px;
+    }
+  }
+
   &__form{
     mat-checkbox{
       font-size: 18px;
@@ -49,7 +60,7 @@
   }
 
   &__form-cta{
-    margin-top: 15px;
+    margin-top: 30px;
     text-align: center;
   }
 
