@@ -99,7 +99,7 @@
               <div *ngIf="question.source.length > 0">
                 <h2 class="title">Source(s) :</h2>
                 <div *ngFor="let item of question.source">
-                  <a [attr.href]="item" target="_blank"> - {{ item }} </a>
+                  - <a [attr.href]="item" target="_blank">{{ item }}</a>
                 </div>
               </div>
               <br />
