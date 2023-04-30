@@ -11,7 +11,7 @@ export interface QuizItem {
   id: string;
   category: number[];
   title: string;
-  stars: string[];
+  imgs: string[];
   visible: boolean;
 }
 

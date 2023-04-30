@@ -1,0 +1,65 @@
+[
+  {
+    "title": "Lequel peut-on examiner, porter et mettre dans une boite ?",
+    "options": ["Sarkozy", "Swarovski", "Les deux"],
+    "responses": ["Les deux"],
+    "source": [],
+    "comment": ""
+  },
+  {
+    "title": "Lequel a été mis plusieurs fois en examen ?",
+    "options": ["Sarkozy", "Swarovski", "Les deux"],
+    "responses": ["Sarkozy"],
+    "source": [],
+    "comment": ""
+  },
+  {
+    "title": "Lequel a réussi sa vie ?",
+    "options": ["Sarkozy", "Swarovski", "Les deux"],
+    "responses": ["Sarkozy"],
+    "source": [],
+    "comment": ""
+  },
+  {
+    "title": "Lequel est brillant ?",
+    "options": ["Sarkozy", "Swarovski", "Les deux"],
+    "responses": ["Les deux"],
+    "source": [],
+    "comment": ""
+  },
+  {
+    "title": "Lequel a échouer à sa réélection ?",
+    "options": ["Sarkozy", "Swarovski", "Les deux"],
+    "responses": ["Sarkozy"],
+    "source": [],
+    "comment": ""
+  },
+  {
+    "title": "Lequel peut-on acheter en magasin ?",
+    "options": ["Sarkozy", "Swarovski", "Les deux"],
+    "responses": ["Swarovski"],
+    "source": [],
+    "comment": ""
+  },
+  {
+    "title": "Lequel peut-on acheter ?",
+    "options": ["Sarkozy", "Swarovski", "Les deux"],
+    "responses": ["Les deux"],
+    "source": [],
+    "comment": ""
+  },
+  {
+    "title": "Lequel se retire simplement ?",
+    "options": ["Sarkozy", "Swarovski", "Les deux"],
+    "responses": ["Swarovski"],
+    "source": [],
+    "comment": ""
+  },
+  {
+    "title": "Lequel peut-il être passé de génération en génération ?",
+    "options": ["Sarkozy", "Swarovski", "Les deux"],
+    "responses": ["Les deux"],
+    "source": [],
+    "comment": ""
+  }
+]

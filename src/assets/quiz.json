@@ -11,29 +11,41 @@
       "id": "starting",
       "category": [300, 302],
       "title": "Quiz d'échauffement",
-      "stars": ["sarkozy", "melenchon", "lepen"],
-      "visible": true
+      "imgs": ["sarkozy", "melenchon", "lepen"],
+      "visible": true,
+      "date": ""
+    },
+    {
+      "id": "sarkozy-swarovski",
+      "category": [302, 100],
+      "title": "Sarkozy, Swarovski  ou les 2 ?",
+      "imgs": ["sarkozy", "swarovski"],
+      "visible": true,
+      "date": ""
     },
     {
       "id": "agression-sexuelle",
       "category": [300, 200],
       "title": "Les soupsons d'agressions sexuelles",
-      "stars": ["darmanin", "abad", "zemmour"],
-      "visible": true
+      "imgs": ["darmanin", "abad", "zemmour"],
+      "visible": false,
+      "date": ""
     },
     {
       "id": "argent-publique",
       "category": [300, 201],
       "title": "Les politiques et l'argent publique",
-      "stars": ["fillon", "cahuzac", "lepen"],
-      "visible": true
+      "imgs": ["fillon", "cahuzac", "lepen"],
+      "visible": false,
+      "date": ""
     },
     {
       "id": "griveaux-grindelwald",
-      "category": [300, 100],
-      "title": "Griveaux, Grindelwald  ou les 2",
-      "stars": ["griveaux", "grindelwald"],
-      "visible": true
+      "category": [100],
+      "title": "Griveaux, Grindelwald  ou les 2 ?",
+      "imgs": ["griveaux", "grindelwald"],
+      "visible": false,
+      "date": ""
     }
   ]
 }

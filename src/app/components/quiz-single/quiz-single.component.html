@@ -12,6 +12,16 @@
     <ng-container *ngFor="let question of ui.questions; let i = index">
       <div class="quiz-single__count" *ngIf="i == ui.currentQuestion">
         Question {{ i + 1 }} sur {{ ui.questions?.length }}
+        <!-- <div *ngIf="i == ui.currentQuestion">
+          <img
+            width="100"
+            class="card-quiz__img"
+            *ngFor="let img of ui.result?.imgs"
+            [src]="'assets/imgs/' + img + '.jpg'"
+            loading="lazy"
+            [alt]="img"
+          />
+        </div> -->
       </div>
 
       <mat-accordion *ngIf="i == ui.currentQuestion">
@@ -76,7 +86,10 @@
             >
               <img [src]="randomGifFail" alt="" width="200px" height="200px" />
               <mat-icon>cancel</mat-icon>
-              <div>Mauvaise réponse</div>
+              <div>
+                <strong>Mauvaise réponse,</strong><br /><br />
+                la réponse était : "{{ question.responses }}"
+              </div>
             </div>
 
             <div>
