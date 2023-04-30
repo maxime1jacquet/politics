@@ -3,13 +3,14 @@
     "100": "Burger Quiz",
     "200": "Agression sexuelle",
     "201": "Détournement de fonds",
+    "202": "Élection",
     "300": "Nouveauté",
     "302": "Indémodable"
   },
   "data": [
     {
       "id": "starting",
-      "category": [300, 302],
+      "category": [302],
       "title": "Quiz d'échauffement",
       "imgs": ["sarkozy", "melenchon", "lepen"],
       "visible": true,
@@ -20,6 +21,14 @@
       "category": [302, 100],
       "title": "Sarkozy, Swarovski  ou les 2 ?",
       "imgs": ["sarkozy", "swarovski"],
+      "visible": true,
+      "date": ""
+    },
+    {
+      "id": "jlm-republique",
+      "category": [100],
+      "title": "Jean-Luc Mélenchon, La 5ème République ou les 2 ?",
+      "imgs": ["melenchon"],
       "visible": true,
       "date": ""
     },

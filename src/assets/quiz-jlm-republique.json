@@ -1,0 +1,63 @@
+[
+  {
+    "title": "Lequel/Laquelle est mise en place par Charles de Gaulle ?",
+    "options": ["Jean-Luc Mélenchon", "La 5ème République", "Les deux"],
+    "responses": ["La 5ème République"],
+    "source": [
+      "https://fr.wikipedia.org/wiki/Cinqui%C3%A8me_R%C3%A9publique_(France)"
+    ],
+    "comment": ""
+  },
+  {
+    "title": "Lequel/Laquelle est le plus ancien ?",
+    "options": ["Jean-Luc Mélenchon", "La 5ème République", "Les deux"],
+    "responses": ["Jean-Luc Mélenchon"],
+    "source": [],
+    "comment": ""
+  },
+  {
+    "title": "Lequel/Laquelle est apparut dans les années 50 ?",
+    "options": ["Jean-Luc Mélenchon", "La 5ème République", "Les deux"],
+    "responses": ["Les deux"],
+    "source": [
+      "https://fr.wikipedia.org/wiki/Cinqui%C3%A8me_R%C3%A9publique_(France)"
+    ],
+    "comment": "En 1951 pour Mélenchon, 1958 pour la 5ème République."
+  },
+  {
+    "title": "Lequel/Laquelle a porté un bouc ?",
+    "options": ["Jean-Luc Mélenchon", "La 5ème République", "Les deux"],
+    "responses": ["Jean-Luc Mélenchon"],
+    "source": [
+      "https://www.youtube.com/watch?v=H7Q9n0SSLfo&ab_channel=INAPolitique"
+    ],
+    "comment": ""
+  },
+  {
+    "title": "Lequel/Laquelle succède à la 4ème République ?",
+    "options": ["Jean-Luc Mélenchon", "La 5ème République", "Les deux"],
+    "responses": ["La 5ème République"],
+    "source": [
+      "https://fr.wikipedia.org/wiki/Cinqui%C3%A8me_R%C3%A9publique_(France)"
+    ],
+    "comment": ""
+  },
+  {
+    "title": "Lequel/Laquelle prône la venu d'une 6ème République ?",
+    "options": ["Jean-Luc Mélenchon", "La 5ème République", "Les deux"],
+    "responses": ["Jean-Luc Mélenchon"],
+    "source": [
+      "https://laec.fr/section/1/reunir-une-assemblee-constituante-pour-passer-a-la-6e-republique?q=6e"
+    ],
+    "comment": ""
+  },
+  {
+    "title": "Lequel/Laquelle est tout simplement 5ème la République ?",
+    "options": ["Jean-Luc Mélenchon", "La 5ème République", "Les deux"],
+    "responses": ["Les deux"],
+    "source": [
+      "https://www.youtube.com/watch?v=ObgDNk2GXEk&ab_channel=euronews%28enfran%C3%A7ais%29"
+    ],
+    "comment": "N'oubliez pas que Jean-Luc Mélenchon est la république ! Et aussi que sa personne est « sacrée »"
+  }
+]
