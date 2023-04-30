@@ -33,7 +33,7 @@
       "category": [300, 100],
       "title": "Griveaux, Grindelwald  ou les 2",
       "stars": ["griveaux", "grindelwald"],
-      "visible": false
+      "visible": true
     }
   ]
 }
